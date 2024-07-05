@@ -18,7 +18,7 @@ fi
 
 # Making swap file.
 echo -e " ↻ 2. Writing $SIZE gigs of null bytes to swapfile."
-#dd if=/dev/zero of=/swapfile bs=1G count=22 status=progress
+dd if=/dev/zero of=/swapfile bs=1G count=$SIZE status=progress
 echo -e " ✓ 2. Made a complete swapfile.\n"
 
 # Setting permision only to the root user.
